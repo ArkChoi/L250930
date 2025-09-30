@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int Study()
 {
 	int N = 0;
 	unsigned long long X = 0;
@@ -14,7 +14,7 @@ int main()
 		cin >> X;
 
 		unsigned long long NPOT = 2;
-		for(int j=1;j<64;j++)
+		for (int j = 1; j < 64; j++)
 		{
 			if (NPOT >= X) {
 				if (i == 0) {
