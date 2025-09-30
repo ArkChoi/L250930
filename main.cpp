@@ -2,15 +2,15 @@
 
 using namespace std;
 
-int SomePOTNumberChange(int NPOT);
-int Double(int POT);
+long long SomePOTNumberChange(long long NPOT);
+long long Double(long long POT);
 
 int main()
 {
-	int GetNumberMax = 0;
-	int NPOTNumber = 0;
-	int POTNumber = 0;
-	int XORRememberNumber = 0;
+	long long GetNumberMax = 0;
+	long long NPOTNumber = 0;
+	long long POTNumber = 0;
+	long long XORRememberNumber = 0;
 
 	cin >> GetNumberMax;
 	for(int i=0;i<GetNumberMax;i++)
@@ -23,9 +23,9 @@ int main()
 	return 0;
 }
 
-int SomePOTNumberChange(int NPOT) 
+long long SomePOTNumberChange(long long NPOT)
 {
-	int POT = 2;
+	long long POT = 2;
 	while(NPOT > POT)
 	{
 		POT = Double(POT);
@@ -33,7 +33,7 @@ int SomePOTNumberChange(int NPOT)
 	return POT;
 }
 
-int Double(int POT)
+long long Double(long long POT)
 {
 	return POT * 2;
 }
