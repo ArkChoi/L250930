@@ -26,7 +26,7 @@ int main()
 long long SomePOTNumberChange(long long NPOT)
 {
 	long long POT = 2;
-	while(POT < NPOT)
+	while(POT <= NPOT)
 	{
 		POT = Double(POT);
 	}
